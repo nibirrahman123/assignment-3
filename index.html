@@ -23,7 +23,7 @@
         <div class="navbar bg-base-100 flex items-center justify-between px-0 py-10">
           <div class="flex items-center">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0 ">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden  ">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" />
@@ -54,24 +54,65 @@
           <div class="  gap-2 md:gap-6 lg:gap-3">
             <button class="text-2xl lg:block hidden"><i class="fa-solid fa-magnifying-glass"></i></button>
 
+            <!-- nav bar theme section  -->
 
-            <label class="swap swap-rotate">
-              <!-- this hidden checkbox controls the state -->
-              <input type="checkbox" class="theme-controller" value="synthwave" />
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn m-1">
+                Theme
+                <svg
+                  width="12px"
+                  height="12px"
+                  class="inline-block h-2 w-2 fill-current opacity-60"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2048 2048">
+                  <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+              </div>
+              <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Default"
+                    value="default" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Retro"
+                    value="retro" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Cyberpunk"
+                    value="cyberpunk" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Valentine"
+                    value="valentine" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Aqua"
+                    value="aqua" />
+                </li>
+              </ul>
+            </div>
 
-              <!-- sun icon -->
-              <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
-              </svg>
-
-              <!-- moon icon -->
-              <svg class="swap-on h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-              </svg>
-            </label>
-
+            <!-- nav bar theme section end  -->
 
             <a class="btn btn-error text-white text-[14px] lg:text-xl">Get Ticket</a>
           </div>
@@ -83,7 +124,7 @@
 
     <div class="carousel w-full lg:h-[700px] h-[300px] md:h-[350px] rounded-xl ">
       <div id="slide1" class="carousel-item relative flex items-end justify-center lg:justify-start w-full">
-        <img src="Images/1.png" class="w-full  h-full rounded-[40px]" />
+        <img src="Images/1.png" class="w-full  h-full rounded-2xl opacity-70" />
         <div class="absolute flex p-4 lg:p-9 gap-[5vw] lg:gap-5">
           <a href="#slide3"
             class="rounded-full text-white bg-black border-none hover:bg-gray-500 flex items-center justify-center h-7 w-7 lg:h-11 lg:w-11">❮</a>
@@ -92,7 +133,7 @@
         </div>
       </div>
       <div id="slide2" class="carousel-item relative flex items-end justify-center lg:justify-start w-full">
-        <img src="Images/4.png" class="w-full h-full rounded-[40px]" />
+        <img src="Images/4.png" class="w-full h-full rounded-2xl opacity-70" />
         <div class="absolute flex p-4 lg:p-9 gap-[5vw] lg:gap-5">
           <a href="#slide1"
             class="rounded-full text-white bg-black border-none hover:bg-gray-500 flex items-center justify-center h-7 w-7 lg:h-11 lg:w-11">❮</a>
@@ -101,7 +142,7 @@
         </div>
       </div>
       <div id="slide3" class="carousel-item relative flex items-end justify-center lg:justify-start w-full">
-        <img src="Images/3.png" class="w-full h-full rounded-[40px]" />
+        <img src="Images/3.png" class="w-full h-full rounded-2xl opacity-70" />
         <div class="absolute flex p-4 lg:p-9 gap-[5vw] lg:gap-5">
           <a href="#slide2"
             class="rounded-full text-white bg-black border-none hover:bg-gray-500 flex items-center justify-center h-7 w-7 lg:h-11 lg:w-11">❮</a>
@@ -111,10 +152,13 @@
       </div>
     </div>
 
+    <!-- banner section end  -->
+
   </header>
-  <main class="container mx-auto px-5">
-    <!-- radial section start-->
-    <section class="">
+
+  <main class="container mx-auto px-5 space-y-12 my-12">
+    <!-- Professional Hockeys Club section start-->
+    <section class="border border-gray-300 shadow rounded-2xl p-4 space-y-12">
       <div>
         <div>
 
@@ -129,19 +173,19 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 md:gap-7 lg:gap-8">
             <div class="text-center shadow-md rounded-xl py-6 space-y-2">
               <div class="radial-progress text-rose-400" style="--value:87;" role="progressbar"><span
-                  class="font-bold ">87%</span></div>
+                  class="font-bold">87%</span></div>
               <h5 class="text-xl font-semibold">Prayer Facility</h5>
               <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
             <div class="text-center shadow-md rounded-xl py-6 space-y-2">
-              <div class="radial-progress text-green-400" style="--value:95;" role="progressbar"><span
-                  class=" font-bold ">95%</span></div>
+              <div class="radial-progress text-violet-400" style="--value:95;" role="progressbar"><span
+                  class=" font-bold">95%</span></div>
               <h5 class="text-xl font-semibold">Experienced Coach</h5>
               <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
             <div class="text-center shadow-md rounded-xl py-6 space-y-2">
-              <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar"><span
-                  class="font-bold ">90%</span></div>
+              <div class="radial-progress text-green-400" style="--value:90;" role="progressbar"><span
+                  class="font-bold">90%</span></div>
               <h5 class="text-xl font-semibold">Senior Player</h5>
               <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
@@ -155,10 +199,10 @@
         </div>
       </div>
     </section>
-    <!-- radial section end -->
+    <!-- professional Hockeys Club section end -->
 
-    <section>
-      <div class="text-center my-16">
+    <section class="border border-gray-300 shadow rounded-2xl p-4 space-y-12">
+      <div class="text-center ">
         <h3 class="text-4xl font-bold ">Program Sections</h3>
         <p class="font-semibold ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
           placerat <br> dolor. Purus urna in sit nullam proin. </p>
@@ -167,7 +211,7 @@
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
 
-          <div class=" h-auto lg:h-[380px] rounded-xl bg-no-repeat bg-center bg-cover bg-[url('Images/2.png')]">
+          <div class=" h-auto lg:h-[380px] rounded-xl bg-no-repeat bg-center bg-cover bg-[url('Images/2.png')] opacity-80">
             <div
               class="bg-[rgba(19,19,24,0.5)] h-full rounded-xl text-white p-4 lg:p-12 space-y-3 flex flex-col items-start justify-center">
               <h4 class="text-3xl font-bold">Junior Program</h4>
@@ -178,7 +222,7 @@
             </div>
           </div>
 
-          <div class=" h-auto lg:h-[380px] rounded-xl bg-no-repeat bg-center bg-cover bg-[url('Images/3.png')]">
+          <div class=" h-auto lg:h-[380px] rounded-xl bg-no-repeat bg-center bg-cover bg-[url('Images/3.png')] opacity-80">
             <div
               class="bg-[rgba(19,19,24,0.5)] h-full rounded-xl text-white p-4 lg:p-12 space-y-3 flex flex-col items-start justify-center">
               <h4 class="text-3xl font-bold">Teenager Program</h4>
@@ -192,7 +236,7 @@
         </div>
       </div>
 
-      <div class=" h-auto lg:h-[380px] rounded-xl bg-no-repeat bg-center bg-cover bg-[url('Images/4.png')]">
+      <div class=" h-auto lg:h-[380px] rounded-xl bg-no-repeat bg-center bg-cover bg-[url('Images/4.png')] opacity-80">
         <div
           class="bg-[rgba(19,19,24,0.5)] h-full rounded-xl text-white p-4 lg:p-12 space-y-3 flex flex-col items-start justify-end">
           <h4 class="text-3xl font-bold">Professional Program</h4>
@@ -210,8 +254,8 @@
     <!-- new products section -->
 
 
-    <section class="mb-12">
-      <div class="text-center my-16">
+    <section class="border border-gray-300 shadow rounded-2xl p-4 space-y-12">
+      <div class="text-center">
         <h3 class="text-4xl font-bold ">Our New Products</h3>
         <p class="font-semibold">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
           turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
@@ -219,7 +263,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
 
-        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 shadow p-7 rounded-xl ">
+        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 border border-gray-400 shadow p-7 rounded-xl ">
           <img src="Images/5.png" alt="" class="w-[100%] lg:w-auto">
           <div>
             <div class="flex  items-center gap-4">
@@ -253,7 +297,7 @@
           </div>
         </div>
 
-        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 shadow p-7 rounded-xl ">
+        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 border border-gray-400 shadow p-7 rounded-xl ">
           <img src="Images/6.png" alt="" class="w-[100%] lg:w-auto">
           <div>
             <div class="flex items-center gap-4">
@@ -287,7 +331,7 @@
           </div>
         </div>
 
-        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 shadow p-7 rounded-xl ">
+        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 border border-gray-400 shadow p-7 rounded-xl ">
           <img src="Images/7.png" alt="" class="w-[100%] lg:w-auto">
           <div>
             <div class="flex items-center gap-4">
@@ -321,7 +365,7 @@
           </div>
         </div>
 
-        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 shadow p-7 rounded-xl ">
+        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 border border-gray-400 shadow p-7 rounded-xl ">
           <img src="Images/8.png" alt="" class="w-[100%] lg:w-auto">
           <div>
             <div class="flex items-center gap-4">
@@ -355,7 +399,7 @@
           </div>
         </div>
 
-        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 shadow p-7 rounded-xl ">
+        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 border border-gray-400 shadow p-7 rounded-xl ">
           <img src="Images/9.png" alt="" class="w-[100%] lg:w-auto">
           <div>
             <div class="flex items-center gap-4">
@@ -389,7 +433,7 @@
           </div>
         </div>
 
-        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 shadow p-7 rounded-xl ">
+        <div class="flex items-start md:items-center lg:items-center flex-col lg:flex-row gap-9 border border-gray-400 shadow p-7 rounded-xl ">
           <img src="Images/10.png" alt="" class="w-[100%] lg:w-auto">
           <div>
             <div class="flex items-center gap-4">
@@ -431,7 +475,7 @@
 
     <!-- accordian section  -->
 
-    <section>
+    <section class="border border-gray-300 shadow rounded-2xl p-4">
       <div class="text-center my-16">
         <h3 class="text-4xl font-bold ">Clients Question</h3>
         <p class="font-semibold ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
@@ -439,9 +483,9 @@
       </div>
 
       <div
-        class="flex flex-col lg:flex-row items-center justify-between p-9 gap-9 border border-gray-200 shadow rounded-3xl">
-        <div class=" w-full md:w-3/4 lg:w-[40%] ">
-          <img src="Images/11.png" alt="" class="rounded-full lg:rounded-3xl md:rounded-3xl w-[100%]">
+        class="flex flex-col lg:flex-row items-center justify-between p-9 gap-9 border border-gray-300 shadow rounded-3xl">
+        <div class=" md:w-3/4 lg:w-[40%] rounded-full md:rounded-3xl lg:rounded-3xl border p-1">
+          <img src="Images/question.jpg" alt="" class="rounded-full lg:rounded-3xl md:rounded-3xl w-full opacity-70">
         </div>
         <div class="w-full lg:w-[60%] grid grid-cols-1 gap-4">
 
@@ -505,8 +549,8 @@
 
     </section>
     <!-- get in touch section  start -->
-    <section class="mb-16">
-      <div class="text-center my-16">
+    <section class="my-16  border border-gray-300 shadow rounded-2xl p-4 space-y-12">
+      <div class="text-center ">
         <h3 class="text-4xl font-bold ">Get In Touch</h3>
         <p class="font-semibold ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
           turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
@@ -514,17 +558,17 @@
       <div class="flex lg:flex-row flex-col items-center gap-6">
         <div
           class=" flex flex-col gap-[1.5vw] w-[100%] lg:w-[40%] rounded-2xl border border-gray-300 shadow  p-[1.5vw]">
-          <div class=" bg-rose-50  rounded-2xl p-[5vw] lg:p-[1.5vw] space-y-3 shadow text-black">
-            <img src="Images/Group 1171275317.png" alt="">
+          <div class=" bg-rose-50 bg-opacity-80 border border-gray-400 rounded-2xl p-[5vw] lg:p-[1.5vw] space-y-3 shadow text-black">
+            <img src="Images/phone-call.png" alt="" class="w-12">
             <p class="text-2xl font-bold">Phone number</p>
             <h6 class="text-xl font-semibold">(+62) 123-321-543</h6>
           </div>
-          <div class=" bg-yellow-50  rounded-2xl p-[5vw] lg:p-[1.5vw] space-y-3 shadow text-black">
-            <img src="Images/Group 1171275318.png" alt="">
+          <div class=" bg-yellow-50 bg-opacity-80 border border-gray-400 rounded-2xl p-[5vw] lg:p-[1.5vw] space-y-3 shadow text-black">
+            <img src="Images/mail.png" alt="" class="w-14">
             <p class="text-2xl font-bold">email</p>
             <h6 class="text-xl font-semibold">hockeys@support.com</h6>
           </div>
-          <div class=" bg-cyan-50  rounded-2xl p-[5vw] lg:p-[1.5vw] space-y-3 shadow text-black">
+          <div class=" bg-cyan-50 bg-opacity-80 border border-gray-400 rounded-2xl p-[5vw] lg:p-[1.5vw] space-y-3 shadow text-black">
             <img src="Images/Group 1171275321.png" alt="">
             <p class="text-2xl font-bold">location</p>
             <h6 class="text-xl font-semibold">152/1 Mohakhali Wireless Gate</h6>
@@ -579,7 +623,7 @@
 
   <!-- footer section   -->
 
-  <footer class=" bg-black  p-10 text-white ">
+  <footer class=" bg-black opacity-80 p-10 text-white ">
     <div class="container mx-auto flex flex-col lg:flex-row justify-between gap-14">
       <div class="flex flex-col justify-between lg:flex-row w-[100%] lg:w-[70%] gap-14 lg:gap-0">
         <aside class="text-center lg:text-start lg:items-start w-[100%] space-y-3">
